@@ -1,0 +1,72 @@
+{{extend './common/add.art'}}
+
+{{block 'title'}}
+    <title>同学录添加页面</title>
+{{/block}}
+
+ {{block 'body'}}
+    <h3 class="inf">同学录添加</h3>
+            <form method="post" action="/add">
+                <table class="table box">
+                    <tr>
+                        <td>
+                            <div class="col-xs-2"></div>
+                            <div class="form-group col-xs-8">
+                                <label for="exampleInputEmail1">姓名</label>
+                                <input name="name" type="text" class="form-control"  placeholder="name">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-xs-2"></div>
+                            <div class="form-group col-xs-8">
+                                <label for="exampleInputEmail1">性别</label><br>
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" id="inlineRadio1" value="男"> 男
+                                </label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" id="inlineRadio2" value="女"> 女
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-xs-2"></div>
+                            <div class="form-group col-xs-8">
+                                <label for="exampleInputEmail1">学校</label>
+                                <input name="school" type="text" class="form-control"  placeholder="school">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-xs-2"></div>
+                            <div class="form-group col-xs-8">
+                                <label for="exampleInputEmail1">地址</label>
+                                <input name="site" type="text" class="form-control"  placeholder="site">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-xs-2"></div>
+                            <div class="form-group col-xs-8">
+                                <label for="exampleInputEmail1">联系方式</label>
+                                <input name="contactInformation" type="text" class="form-control"  placeholder="contactInformation">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-xs-2"></div>
+                            <div class="form-group col-xs-8">
+                                <input type="submit" value="添加同学" class="btn btn-info">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+ {{/block}}
+            
